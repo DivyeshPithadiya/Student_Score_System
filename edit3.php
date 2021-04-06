@@ -1,5 +1,5 @@
 <html>
-
+<?php require 'navbar.php'?>
 <div>
 	<center>
 		<h1 style=color:white;background-color:grey;word-spacing:3;padding:8;>Update Record</h1></head>
@@ -80,7 +80,7 @@
 		}
 	
 	echo "<div style=font-size:20;>
-		<form style=margin-top:40px; method='post'"."action='edit4.php?id=$id'> "; 
+		<form style=margin-top:60px; method='post'"."action='edit4.php?id=$id'> "; 
 			
 			echo "<label style=margin-left:20;>Name:</label><input type='text' value='$name' name='name' required style=height:30;width:300;margin-left:40;><br>
 			<label style=margin-left:20;>Mail ID:</label><input type='email' value='$mail' name='mail' required style=height:30;width:300;margin-left:26;margin-top:20;><br>
@@ -125,17 +125,15 @@
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
 			
-				<option selected>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
-			
+			<option value=1 selected>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9>TYBMS</option>
 			</select><br>
 			
 			<label style=margin-left:20;>Exam:</label>"
@@ -146,16 +144,15 @@
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
 			
-				<option >1</option>
-				<option selected>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+			<option value=1>FYBSC-CS</option>
+			<option value=2 selected>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9>TYBMS</option>
 			
 			</select><br>
 			
@@ -166,17 +163,15 @@
 			{
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
-			
-				<option >1</option>
-				<option>2</option>
-				<option selected>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3 selected>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9>TYBMS</option>
 			
 			</select><br>
 			
@@ -187,17 +182,15 @@
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
 			
-				<option >1</option>
-				<option>2</option>
-				<option>3</option>
-				<option selected>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
-			
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3 >TYBSC-CS</option>
+			<option value=4 selected>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9>TYBMS</option>
 			</select><br>
 			
 			<label style=margin-left:20;>Exam:</label>"
@@ -208,16 +201,15 @@
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
 			
-				<option selected>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option selected>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5 selected>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9>TYBMS</option>
 			
 			</select><br>
 			
@@ -228,17 +220,15 @@
 			{
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
-			
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option >5</option>
-				<option selected>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6 selected>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9>TYBMS</option>
 			
 			</select><br>
 			
@@ -250,16 +240,15 @@
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
 			
-				<option >1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option selected>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7 selected>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9>TYBMS</option>
 			
 			</select><br>
 			
@@ -270,17 +259,15 @@
 			{
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
-			
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option selected>8</option>
-				<option>9</option>
-				<option>10</option>
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8 selected>SYBMS</option>
+			<option value=9>TYBMS</option>
 			
 			</select><br>
 			
@@ -292,16 +279,15 @@
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
 			
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option >8</option>
-				<option selected>9</option>
-				<option>10</option>
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9 selected>TYBMS</option>
 			
 			</select><br>
 			
@@ -313,16 +299,15 @@
 			
 			echo "<select name='std' value='$std' required style=height:30;width:300;margin-left:15;margin-top:20;>
 			
-				<option selected>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option selected>10</option>
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9 selected>TYBMS</option>
 			
 			</select><br>
 			
@@ -413,19 +398,21 @@
 			</select>";
 			}
 
-	echo "<div style=position:absolute;top:80;left:500;display:block;>
+	echo "<div style=position:absolute;top:165;margin-left:20;left:500;display:block;>
 		
-		<label>English:</label><input type='number' value=$eng name='eng' required style=height:30;width:300;margin-left:50;margin-top:20;><br>
-		<label>Hindi:</label><input type='number' name='hin' value=$hin required style=height:30;width:300;margin-left:67;margin-top:20;><br>
-		<label>Marathi:</label><input type='number' name='mar' value=$mar required style=height:30;width:300;margin-left:50;margin-top:20;><br>
-		<label>Maths:</label><input type='number' name='math' value=$math required style=height:30;width:300;margin-left:65;margin-top:20;><br>
-		<label>Science:</label><input type='number' name='sci' value=$sci required style=height:30;width:300;margin-left:54;margin-top:20;><br>
-		<label>Social Studies:</label><input type='number' name='ss' value=$ss required style=height:30;width:300;margin-left:5;margin-top:20;><br>
-		
+		<label>Subject 1:</label><input type='number' value=$eng name='eng' required style=height:30;width:300;margin-left:50;margin-top:20;><br>
+		<label>Subject 2:</label><input type='number' name='hin' value=$hin required style=height:30;width:300;margin-left:50;margin-top:20;><br>
+		<label>Subject 3:</label><input type='number' name='mar' value=$mar required style=height:30;width:300;margin-left:50;margin-top:20;><br>
+		<label>Subject 4:</label><input type='number' name='math' value=$math required style=height:30;width:300;margin-left:50;margin-top:20;><br>
+		<label>Subject 5:</label><input type='number' name='sci' value=$sci required style=height:30;width:300;margin-left:50;margin-top:20;><br>
+		<label>Subject 6:</label><input type='number' name='ss' value=$ss required style=height:30;width:300;margin-left:50;margin-top:20;><br>
+	
+		</div>	
 </div>
 
-	<button style=padding:8;margin-top:20;margin-left:70;width:80;>Submit</button>
-		
+<div style=padding:8;margin-top:20;margin-left:600;width:80;>
+	<button >Submit</button>
+
 </form>";	
 ?>
 </html>

@@ -1,4 +1,5 @@
 <html>
+<?php require 'navbar.php'?>
 	<?php
 	
 	if(isset($_POST['standard']))
@@ -14,12 +15,57 @@
 		$exam=$_GET['exam'];
 		}
 	}
+
+	if($standard==1)
+	{
+		$std='FYBSC-CS';
+	}
+
+	if($standard==2)
+	{
+		$std='SYBSC-CS';
+	}
+
+	if($standard==3)
+	{
+		$std='TYBSC-CS';
+	}
+
+	if($standard==4)
+	{
+		$std='FYBSC-IT';
+	}
+
+	if($standard==5)
+	{
+		$std='SYBSC-IT';
+	}
+
+	if($standard==6)
+	{
+		$std='TYBSC-IT';
+	}
+
+	if($standard==7)
+	{
+		$std='FYBMS';
+	}
+
+	if($standard==8)
+	{
+		$std='SYBMS';
+	}
+
+	if($standard==9)
+	{
+		$std='TYBMS';
+	}
 	
 	
 	
 	echo	"<div>
 	<center>
-		<h1 style=color:white;background-color:grey;word-spacing:3;padding:8;>Student Record of Standard ".$standard."</h1></head>
+		<h1 style=color:white;background-color:grey;word-spacing:3;padding:8;>Student Record of Standard ".$std."</h1></head>
 	</center>
 	</div>";
 	
@@ -40,12 +86,12 @@
 			<th>Name</th>
 			<th>Standard</th>
 			<th>Exam</th>
-			<th>English</th>
-			<th>Hindi</th>
-			<th>Marathi</th>
-			<th>Maths</th>
-			<th>Science</th>
-			<th>Social Science</th>
+			<th>Subject 1</th>
+			<th>Subject 2</th>
+			<th>Subject 3</th>
+			<th>Subject 4</th>
+			<th>Subject 5</th>
+			<th>Subject 6</th>
 			<th>Total Marks</th>
 			<th>Percentage</th>
 			<th>Delete Record</th>
@@ -54,11 +100,55 @@
 		
 		while($row=mysqli_fetch_array($res))
 		{
+		if($row['std']==1)
+		{
+			$std='FYBSC-CS';
+		}
+
+		if($row['std']==2)
+		{
+			$std='SYBSC-CS';
+		}
+
+		if($row['std']==3)
+		{
+			$std='TYBSC-CS';
+		}
+
+		if($row['std']==4)
+		{
+			$std='FYBSC-IT';
+		}
+
+		if($row['std']==5)
+		{
+			$std='SYBSC-IT';
+		}
+
+		if($row['std']==6)
+		{
+			$std='TYBSC-IT';
+		}
+
+		if($row['std']==7)
+		{
+			$std='FYBMS';
+		}
+
+		if($row['std']==8)
+		{
+			$std='SYBMS';
+		}
+
+		if($row['std']==9)
+		{
+			$std='TYBMS';
+		}
 	
 		echo"		
 			<tr>
 			<td>".$row['name']."</td>
-			<td>".$row['std']."</td>
+			<td>".$std."</td>
 			<td>".$row['exam']."</td>
 			<td>".$row['english']."</td>
 			<td>".$row['hin']."</td>
@@ -166,12 +256,12 @@ echo "</div></center>"
 	<label>Sort According to:</label>
 	
 	<select name="sort" required style=margin-top:10;height:30;border-radius:10px;>
-		<option>English</option>
-		<option>Hindi</option>
-		<option>Marathi</option>
-		<option>Maths</option>
-		<option>Science</option>
-		<option>Social Science</option>
+		<option value="English">Subject 1</option>
+		<option value="Hindi">Subject 2</option>
+		<option value="Marathi">Subject 3</option>
+		<option value="Maths">Subject 4</option>
+		<option value="Science">Subject 5</option>
+		<option value="Social Science">Subject 6</option>
 		<option>Total Marks</option>
 		<option>Percentage</option>
 	</select><br>	

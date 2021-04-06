@@ -1,4 +1,5 @@
 <html>
+<?php require 'navbar.php'?>
 	<?php
 	
 	if(isset($_GET['std']))
@@ -80,12 +81,12 @@
 			<th>Name</th>
 			<th>Standard</th>
 			<th>Exam</th>
-			<th>English</th>
-			<th>Hindi</th>
-			<th>Marathi</th>
-			<th>Maths</th>
-			<th>Science</th>
-			<th>Social Science</th>
+			<th>Subject 1</th>
+			<th>Subject 2</th>
+			<th>Subject 3</th>
+			<th>Subject 4</th>
+			<th>Subject 5</th>
+			<th>Subject 6</th>
 			<th>Total Marks</th>
 			<th>Percentage</th>
 			<th>Delete Record</th>

@@ -1,4 +1,5 @@
 <html>
+<?php require 'navbar.php'?>
 	<?php
 	$name=$_POST['name'];
 	$roll=$_POST['roll'];

@@ -1,4 +1,5 @@
 <html>
+<?php require 'navbar.php'?>
 	<?php
 		session_start();
 		

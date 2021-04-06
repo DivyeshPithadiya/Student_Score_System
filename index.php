@@ -1,13 +1,14 @@
 <html>
+<?php require 'navbar.php'?>
 	<div>
 	<center>
-		<h1 style=color:white;background-color:grey;word-spacing:3;padding:8;>Exam Score Management</h1></head>
+		<h1 style=color:white;background-color:grey;word-spacing:3;padding:8;margin-top:0;>Exam Score Management</h1></head>
 	</center>
 	</div>
 	
 	<center>
 	
-		<h2 style=color:brown;margin-top:30;>Student Details</h2>
+		<h2 style=color:#cc0500;margin-top:30;>Student Details</h2>
 	
 	</center>
 	
@@ -21,18 +22,15 @@
 			<label style=margin-left:460;>RollNo:</label><input type="number" name="roll" required style=height:30;width:300;margin-left:32;margin-top:20;><br>
 			<label style=margin-left:460;>Standard:</label>
 			<select name="std" required style=height:30;width:300;margin-left:15;margin-top:20;>
-			
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-				<option>5</option>
-				<option>6</option>
-				<option>7</option>
-				<option>8</option>
-				<option>9</option>
-				<option>10</option>
-			
+			<option value=1>FYBSC-CS</option>
+			<option value=2>SYBSC-CS</option>
+			<option value=3>TYBSC-CS</option>
+			<option value=4>FYBSC-IT</option>
+			<option value=5>SYBSC-IT</option>
+			<option value=6>TYBSC-IT</option>
+			<option value=7>FYBMS</option>
+			<option value=8>SYBMS</option>
+			<option value=9>TYBMS</option>
 			</select><br>
 			
 			<label style=margin-left:460;>Exam:</label>
@@ -68,13 +66,13 @@
 			
 		</form>
 		
-		<div style=background-color:grey;position:absolute;top:65;left:9;height:550;width:200;>
+		<!-- <div style=background-color:grey;position:absolute;top:65;left:9;height:550;width:200;>
 		
 			<a  href="display.php" style=text-decoration:none;color:white;><p style=margin-top:250;>Display/Edit/Delete Records</p></a>
 			<a  href="search.php" style=text-decoration:none;color:white;><p>Search Record</p></a>
 	
 		</div>
-		
+		 -->
 	</div>
 
 </html>
